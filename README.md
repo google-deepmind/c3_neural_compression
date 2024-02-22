@@ -54,13 +54,8 @@ git clone https://github.com/google-deepmind/c3_neural_compression.git
 cd c3_neural_compression
 # install all required packages
 pip3 install -r requirements.txt
-```
-
-Note that the directory containing this repository must be included in the
-`PYTHONPATH` environment variable. This can be done by e.g.,
-
-```shell
-export PYTHONPATH=DIR_CONTAINING_C3
+# Include this directory in PYTHONPATH so we can import modules.
+export PYTHONPATH=${PWD}:$PYTHONPATH
 ```
 
 Once done with virtual environment, deactivate with command:
