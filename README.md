@@ -8,15 +8,6 @@ C3 paper link: https://arxiv.org/abs/2312.02753
 
 Project page: https://c3-neural-compression.github.io/
 
-This code can be used to train and evaluate the C3 model in the paper, that can
-be used to reproduce the empirical results of the paper, including the
-psnr/per-frame-mse values
-(logged as `psnr_quantized` / `per_frame_distortion_quantized`) and the
-corresponding bpp values (logged as `bpp_total`) for each image / video patch.
-We have tested this code on a single NVIDIA P100 and V100 GPU, with Python 3.10.
-Around 20M / 300M / 25G of hard disk space is required to download the
-Kodak / CLIC2020 / UVG datasets respectively.
-
 Abstract: Most neural compression models are trained on large datasets of images or videos
 in order to generalize to unseen data. Such generalization typically requires
 large and expressive architectures with a high decoding complexity. Here we
@@ -31,6 +22,15 @@ the H.266 codec, with less than 3k MACs/pixel for decoding. On the UVG video
 benchmark, we match the RD performance of the Video Compression Transformer
 (Mentzer et al.), a well-established neural video codec, with less than 5k
 MACs/pixel for decoding.
+
+This code can be used to train and evaluate the C3 model in the paper, that can
+be used to reproduce the empirical results of the paper, including the
+psnr/per-frame-mse values
+(logged as `psnr_quantized` / `per_frame_distortion_quantized`) and the
+corresponding bpp values (logged as `bpp_total`) for each image / video patch.
+We have tested this code on a single NVIDIA P100 and V100 GPU, with Python 3.10.
+Around 20M / 300M / 25G of hard disk space is required to download the
+Kodak / CLIC2020 / UVG datasets respectively.
 
 C3 builds on top of [COOL-CHIC](https://arxiv.org/abs/2212.05458) with official
 [PyTorch implementation](https://github.com/Orange-OpenSource/Cool-Chic).
