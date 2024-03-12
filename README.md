@@ -8,7 +8,7 @@ C3 paper link: https://arxiv.org/abs/2312.02753
 
 Project page: https://c3-neural-compression.github.io/
 
-Abstract: Most neural compression models are trained on large datasets of images or videos
+*Abstract: Most neural compression models are trained on large datasets of images or videos
 in order to generalize to unseen data. Such generalization typically requires
 large and expressive architectures with a high decoding complexity. Here we
 introduce C3, a neural compression method with strong rate-distortion (RD)
@@ -21,7 +21,7 @@ benchmark, we match the RD performance of VTM, the reference implementation of
 the H.266 codec, with less than 3k MACs/pixel for decoding. On the UVG video
 benchmark, we match the RD performance of the Video Compression Transformer
 (Mentzer et al.), a well-established neural video codec, with less than 5k
-MACs/pixel for decoding.
+MACs/pixel for decoding.*
 
 This code can be used to train and evaluate the C3 model in the paper, that can
 be used to reproduce the empirical results of the paper, including the
