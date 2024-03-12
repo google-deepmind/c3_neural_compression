@@ -4,6 +4,10 @@ This repository contains code for reproducing results in the paper
 *C3: High-performance and low-complexity neural compression from a single image or video*
 (abstract and arxiv link below).
 
+C3 paper link: https://arxiv.org/abs/2312.02753
+
+Project page: https://c3-neural-compression.github.io/
+
 This code can be used to train and evaluate the C3 model in the paper, that can
 be used to reproduce the empirical results of the paper, including the
 psnr/per-frame-mse values
@@ -27,8 +31,6 @@ the H.266 codec, with less than 3k MACs/pixel for decoding. On the UVG video
 benchmark, we match the RD performance of the Video Compression Transformer
 (Mentzer et al.), a well-established neural video codec, with less than 5k
 MACs/pixel for decoding.
-
-C3 paper link: https://arxiv.org/abs/2312.02753
 
 C3 builds on top of [COOL-CHIC](https://arxiv.org/abs/2212.05458) with official
 [PyTorch implementation](https://github.com/Orange-OpenSource/Cool-Chic).
