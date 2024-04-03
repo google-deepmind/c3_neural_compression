@@ -10,7 +10,7 @@ jaxline==0.0.8
 ml-collections==0.1.1
 numpy==1.25.2
 optax==0.1.9
-pillow==10.2.0
+pillow==10.3.0
 scipy==1.11.4
 tensorflow==2.15.*
 torch==2.2.0
