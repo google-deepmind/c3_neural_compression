@@ -15,4 +15,4 @@ scipy==1.11.4
 tensorflow==2.15.*
 torch==2.2.0
 torchvision==0.17.0
-tqdm==4.66.1
+tqdm==4.66.3
