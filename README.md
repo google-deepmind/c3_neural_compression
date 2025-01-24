@@ -88,28 +88,23 @@ Then run `bash download_uvg.sh` after modifying the `ROOT` variable in `download
 ## Run experiments
 Set the hyperparameters in `image.py` or `video.py` as desired by modifying
 the config values. Then inside the virtual environment,
-
-```shell
-cd experiments
-```
-
-and run the
+make sure `pwd` is the parent directory of `c3_neural_compression` and run the
 [JAXline](https://github.com/deepmind/jaxline) experiment via command:
 
 ```shell
-python3 -m image --config=../configs/kodak.py
+python3 -m c3_neural_compression.experiments.image --config=c3_neural_compression/configs/kodak.py
 ```
 
 or
 
 ```shell
-python3 -m image --config=../configs/clic2020.py
+python3 -m c3_neural_compression.experiments.image --config=c3_neural_compression/configs/clic2020.py
 ```
 
 or
 
 ```shell
-python3 -m video --config=../configs/uvg.py
+python3 -m c3_neural_compression.experiments.video --config=c3_neural_compression/configs/uvg.py
 ```
 
 Note that for the UVG experiment, the value of `exp.dataset.root_dir` must match the value of the `ROOT` variable used for `download_uvg.sh`.
