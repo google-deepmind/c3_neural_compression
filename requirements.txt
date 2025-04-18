@@ -23,5 +23,5 @@ jax[cuda12]==0.4.24  # change to `cuda11` if using cuda11
 # Note that torch is only used for data loading, so can use cpu only verison.
 # Using gpu version will give conflict with tf for required nvidia-cublas-cu12 version.
 --find-links https://download.pytorch.org/whl/torch_stable.html
-torch==2.2.0+cpu
+torch==2.6.0
 torchvision==0.17.0+cpu
