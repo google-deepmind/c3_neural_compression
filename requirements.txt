@@ -9,7 +9,7 @@ jaxline==0.0.8
 ml-collections==0.1.1
 numpy==1.25.2
 optax==0.1.9
-pillow==10.3.0
+pillow==12.2.0
 scipy==1.11.4
 tensorflow[and-cuda]==2.17.1  # for gpu compatibility
 tensorflow-probability==0.24.0  # for distrax
